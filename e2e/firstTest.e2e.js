@@ -11,17 +11,17 @@ describe('Home Screen', () => {
     await expect(element(by.id('welcome'))).toBeVisible();
   });
 
-  // it('check register a new skill', async () => {
-  //   const inputNewSkill = await element(by.id('input-new'));
-  //   const buttonAdd = await element(by.id('button-add'));
-  //   const flatListSkills = await element(by.id('flat-list-skills'));
+  it('check register a new skill', async () => {
+    const inputNewSkill = await element(by.id('input-new'));
+    const buttonAdd = await element(by.id('button-add'));
+    const flatListSkills = await element(by.id('flat-list-skills'));
 
-  //   await inputNewSkill.tap();
-  //   await inputNewSkill.typeText('React Native');
-  //   await buttonAdd.tap();
+    await inputNewSkill.tap();
+    await inputNewSkill.typeText('React Native');
+    await buttonAdd.tap();
 
-  //   await flatListSkills.tap();
+    await flatListSkills.tap();
 
-  //   expect(element(by.id('flat-list-skills'))).toBeVisible();
-  // });
+    expect(element(by.id('flat-list-skills'))).toBeVisible();
+  });
 });
